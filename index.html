@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>装甲风暴</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="《战舰世界》">
+<meta name="description" content="《战舰世界》">
+<meta name="full-screen" content="yes">
+<meta http-equiv="Expires" content="-1">           
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/com.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link type="image/x-icon" href="http://wows.kongzhong.com/favicon.ico" rel="icon">
+<link rel="shortcut icon" href="http://zj.kongzhong.com/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="banner_wrap">
+		<div class="banner_box">
+			<!-- <div class="nav_box clearfix">
+				<div class="login_box fl clearfix">
+					<a href="javascript:;" onclick="Tips.showLogin();">登录</a>
+					<a href="javascript:;">注册</a>
+				</div>
+			</div> -->
+			<!-- style.js 调用登录窗口" -->
+			<a href="javascript:;" class="canyu_btn" onclick="Tips.showChat();">立即参与</a>
+		</div>
+	</div>
+	
+	<!--CNZZ的网站统计代码-->
+	<div style="display:none">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2492438'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/stat.php%3Fid%3D2492438' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+	<!--CNZZ的网站统计代码-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/my.library.js"></script>
+
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tips.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var availHeight=window.screen.availHeight/6;
+		var bScrollH=$('body').scrollTop();
+		$(document).on("focus",'.chatWrap .chatArea',function(){
+			/*$("body").stop().animate({
+     			scrollTop: availHeight 
+			}, 100);*/
+		}).on('blur','.chatWrap .chatArea',function(){
+			/*$("body").stop().animate({
+     			scrollTop: bScrollH
+			}, 100);*/
+		});
+	})
+</script>
+<!--<script type="text/javascript" src="http://track.kongzhong.com/refer.js"></script>
+<div style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259078961'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1259078961' type='text/javascript'%3E%3C/script%3E"));</script></div>-->
+</body>
+
+	<!--登录弹窗-->
+	<!-- <div id="fade_div" class="black_overlay"></div> -->
+	<!--登陆框-->
+<!-- <div class="logClick log_pop pop">
+	<div class="close" onclick="Tips.hideLogin();"><img src="images/close.png"/></div>
+	<form action="return false;">
+		<ul>
+			<li class="ridius">
+				<label for="zH">帐　号：</label>
+				<input class="ridius" id="zH" type="text" validate="true" placeholder="帐号" msg="请输入帐号"/>
+			</li>
+			<li class="ridius">
+				<label >密　码：</label>
+				<input class="ridius" id="mM" type="password" validate="true" placeholder="密码（6-16位，区分大小写）" msg="请输入密码"/>
+			</li>
+			<li class="ridius">
+				<label>验证码：</label>
+				<input class="ridius yzmInput" id="yzM" type="text" placeholder="验证码" maxlength="4"/>
+				<img class="yzmImg" onclick="Util.verifyImg()" id="verify" src="">
+			</li>
+		</ul>
+		<font id="loginTips">帐号或者密码错误</font>
+		<a class="aBtnsure" onclick="Util.login(Util.LOGIN_TYPE_LOGIN);">登 录</a>
+	</form>
+</div> -->
+	<!--用户未登录弹窗-->
+<!-- <div class="pop tishi_pop2">
+	<div class="close"><img src="images/close.png" onclick="Tips.hideTips2();"></div>
+	<p id="msgs">您还未登录,请先   <a href="javascript:;" onclick="Tips.showLoginTwo();">登录</a></p>
+	<dl>
+		<dd><a class="qclose" onclick="Tips.hideTips2();">确定</a></dd>
+	</dl>
+</div> -->
+</html>
